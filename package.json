@@ -6,7 +6,7 @@
 		"build": "grunt less && grunt csso && grunt postcss && grunt imagemin",
 		"finish": "npm run build && grunt serve"
 	},
-	"name": "pink",
+	"name": "sedona",
 	"version": "0.1.0",
 	"main": "gruntfile.js",
 	"devDependencies": {

@@ -1,0 +1,27 @@
+.main-nav__list {
+	.list-reset;
+	
+	font-family: "PT Sans Bold";
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 40px;
+}
+
+.main-nav__item {
+	text-transform: uppercase;
+	
+	background-color: @blue-color;
+	
+	& a {
+		.link-reset;
+		
+		text-align: center;
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.main-nav__list {
+		font-size: 14px;
+		line-height: 26px;
+	}
+}
