@@ -13,7 +13,7 @@
 
 <body>
 	<header class="page-header">
-		<nav class="main-nav">
+		<nav class="main-nav main-nav--closed main-nav--nojs">
 			<a class="page-header__logo">
 				<picture>
 					<source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
@@ -21,7 +21,8 @@
 					<img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип Седоны">
 				</picture>
 			</a>
-			<button class="main-nav__toggle"><span class="visually-hidden">Открыть главное меню</span></button>
+			<button class="main-nav__toggle-open"><span class="visually-hidden">Открыть главное меню</span></button>
+			<button class="main-nav__toggle-close"><span class="visually-hidden">Закрыть главное меню</span></button>
 			<ul class="main-nav__list">
 				<li class="main-nav__item"><a>Главная</a></li>
 				<li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
@@ -89,7 +90,7 @@
 			</picture>
 		</section>
 	</main>
-	
+
 	<footer class="page-footer">
 		<b class="page-footer__hashtag">#visitsedona</b>
 		<ul class="social">
@@ -103,6 +104,25 @@
 		</p>
 	</footer>
 
+	<script>
+		var NavMain = document.querySelector(".main-nav");
+		var NavToggleOpen = document.querySelector(".main-nav__toggle-open");
+		var NavToggleClose = document.querySelector(".main-nav__toggle-close");
+
+		NavMain.classList.remove("main-nav--nojs");
+
+		NavToggleOpen.addEventListener("click", function(evt) {
+			evt.preventDefault();
+			NavMain.classList.remove("main-nav--closed");
+			NavMain.classList.add("main-nav--opened");
+		});
+
+		NavToggleClose.addEventListener("click", function(evt) {
+			evt.preventDefault();
+			NavMain.classList.remove("main-nav--opened");
+			NavMain.classList.add("main-nav--closed");
+		});
+	</script>
 </body>
 
 </html>
