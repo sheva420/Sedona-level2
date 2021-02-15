@@ -22,6 +22,7 @@
 	font-size: 14px;
 	line-height: 26px;
 	text-align: center;
+	color: #333333;
 }
 
 .advantages__list {
@@ -30,11 +31,11 @@
 
 .advantages__item {
 	position: relative;
-	
+
 	padding: 29px 20px;
 
 	text-align: center;
-	
+
 	background-color: #eeeeee;
 
 	&--town {
@@ -50,25 +51,25 @@
 			margin-bottom: 42px;
 		}
 	}
-	
+
 	&--bridge {
 		padding: 41px 20px 298px 20px;
-		
+
 		background-image: url(../img/main-bridge-tablet@1x.jpg);
 		background-position: center bottom;
 		background-repeat: no-repeat;
 	}
-	
+
 	&::after {
 		content: '';
-		
+
 		position: absolute;
 		bottom: 0;
 		left: 50%;
-		
+
 		width: 87.5%;
 		height: 1px;
-		
+
 		background-color: rgba(0, 0, 0, 0.1);
 		transform: translateX(-50%);
 	}
@@ -76,14 +77,18 @@
 	&--blue {
 		background-color: @blue-color;
 		color: #ffffff;
-		
+
+		& .advantages__description {
+			color: #ffffff;
+		}
+
 		&::after {
 			content: none;
 		}
 	}
-	
+
 	&:last-child {
-		
+
 		&::after {
 			content: none;
 		}
@@ -108,6 +113,8 @@
 .advantages__description {
 	.mp-reset;
 	padding: 0 20px;
+
+	color: #333333;
 }
 
 .advantages__sublist {
@@ -125,7 +132,7 @@
 
 .advantages__subitem {
 	position: relative;
-	
+
 	max-width: 472px;
 	margin: 0 auto;
 
@@ -145,17 +152,17 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			
+
 			width: 37px;
 			height: 36px;
-			
+
 			background-image: url(../img/icon-house.svg);
 			background-position: 0 0;
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
 	}
-	
+
 	&--souvenir {
 
 		&::before {
@@ -164,17 +171,17 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			
+
 			width: 32px;
 			height: 38px;
-			
+
 			background-image: url(../img/icon-gift.svg);
 			background-position: 0 0;
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
 	}
-	
+
 	&--food {
 
 		&::before {
@@ -183,10 +190,10 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			
+
 			width: 38px;
 			height: 35px;
-			
+
 			background-image: url(../img/icon-burger.svg);
 			background-position: 0 0;
 			background-repeat: no-repeat;
@@ -210,12 +217,138 @@
 }
 
 @media (min-width: @tablet-width) {
-	.advntages__title {
+	.advantages__title {
+		padding: 0 80px;
+		margin-bottom: 33px;
+
 		font-size: 21px;
 	}
 
+	.advantages__text {
+		margin-bottom: 50px;
+	}
+	
+	.advantages__list {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.advantages__item {
+		width: calc(100% / 3);
+		min-height: 256px;
+		padding: 47px 25px 44px;
+		
+		box-sizing: border-box;
+		
+		&--town {
+			width: 100%;
+			padding: 0;
+			padding-top: 41px;
+
+			background-image: url(../img/main-city-tablet@1x.jpg);
+			background-position: right 0;
+			background-repeat: no-repeat;
+
+			& .advantages__item-wrapper {
+				width: 33%;
+			}
+
+			& .advantages__description {
+				padding: 0 45px;
+			}
+		}
+
+		&--bridge {
+			width: 100%;
+			padding: 41px 0 42px 67%;
+
+			background-image: url(../img/main-bridge-tablet@1x.jpg);
+			background-position: left 0;
+			
+			& .advantages__name {
+				padding: 0 50px;
+			}
+
+			& .advantages__description {
+				padding: 0 48px;
+			}
+		}
+		
+		&::after {
+			content: none;
+		}
+	}
+
 	.advantages__name {
+		padding: 0 30px;
+		margin-bottom: 12px;
+
 		font-size: 21px;
+	}
+
+	.advantages__number {
+		margin-bottom: 25px;
+	}
+
+	.advantages__sublist {
+		width: 100%;
+		padding: 0;
+		padding-bottom: 63px;
+		display: flex;
+		justify-content: space-between;
+
+		background-image: none;
+	}
+
+	.advantages__subitem {
+		width: calc(100% / 3);
+		.mp-reset;
+		padding: 161px 47px 0;
+
+		text-align: center;
+
+		box-sizing: border-box;
+
+		&--housing {
+
+			&::before {
+				top: 60px;
+				left: 50%;
+
+				width: 75px;
+				height: 72px;
+
+				transform: translateX(-50%);
+			}
+		}
+
+		&--souvenir {
+			order: 3;
+
+			&::before {
+				top: 60px;
+				left: 50%;
+
+				width: 63px;
+				height: 75px;
+
+				transform: translateX(-50%);
+			}
+		}
+
+		&--food {
+
+			&::before {
+				top: 60px;
+				left: 50%;
+
+				width: 77px;
+				height: 69px;
+
+				transform: translateX(-50%);
+			}
+		}
 	}
 
 	.advantages__subname {
