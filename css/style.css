@@ -9,6 +9,13 @@ body {
   line-height: 21px;
   font-display: swap;
   text-transform: uppercase;
+  background-color: #f2f2f2;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px #aaaaaa;
 }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -245,6 +252,15 @@ img {
   padding: 0;
   padding-top: 37px;
 }
+.advantages__item--town::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background: linear-gradient(to bottom left, transparent 49%, #81b3d2 51%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, transparent 49%, #81b3d2 51%) right / 50.5% 100% no-repeat;
+}
 .advantages__item--town .advantages__name {
   padding: 0 20px;
 }
@@ -393,15 +409,24 @@ img {
     box-sizing: border-box;
   }
   .advantages__item--town {
+    position: relative;
     width: 100%;
     padding: 0;
     padding-top: 41px;
     background-image: url(../img/main-city-tablet@1x.jpg);
     background-position: right 0;
     background-repeat: no-repeat;
+    background-size: 67% auto;
+  }
+  .advantages__item--town::before {
+    content: none;
   }
   .advantages__item--town .advantages__item-wrapper {
     width: 33%;
+    min-height: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .advantages__item--town .advantages__description {
     padding: 0 45px;
@@ -411,6 +436,13 @@ img {
     padding: 41px 0 42px 67%;
     background-image: url(../img/main-bridge-tablet@1x.jpg);
     background-position: left 0;
+    background-size: 67% auto;
+  }
+  .advantages__item--bridge .advantages__item-wrapper {
+    min-height: 173px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .advantages__item--bridge .advantages__name {
     padding: 0 50px;
@@ -471,6 +503,16 @@ img {
   }
   .advantages__subname {
     font-size: 21px;
+  }
+}
+@media (min-width: 1200px) {
+  .advantages__item--town {
+    background-image: url(../img/main-city-desktop@1x.jpg);
+    background-position: right -72px;
+  }
+  .advantages__item--bridge {
+    background-image: url(../img/main-bridge-desktop@1x.jpg);
+    background-position: left -72px;
   }
 }
 .information {
@@ -754,7 +796,6 @@ img {
 }
 .page-header {
   position: relative;
-  padding-bottom: 355px;
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -773,6 +814,21 @@ img {
   background-size: cover;
   transform: translateX(-50%);
 }
+.page-header__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 355px;
+}
+.page-header__wrapper::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 26px;
+  background: linear-gradient(to bottom left, transparent 49%, #ffffff 51%) left / 50.5% 100% no-repeat, linear-gradient(to bottom right, transparent 49%, #ffffff 51%) right / 50.5% 100% no-repeat;
+}
 .page-header__logo {
   display: block;
   margin: 0 auto;
@@ -780,13 +836,28 @@ img {
 }
 @media (min-width: 768px) {
   .page-header {
-    padding-bottom: 518px;
     background-image: url(../img/bg-back-desktop@1x.jpg);
   }
   .page-header::after {
     bottom: 91px;
     width: 460px;
     height: 350px;
+  }
+  .page-header__wrapper {
+    padding-bottom: 518px;
+  }
+  .page-header__wrapper::before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 57px;
+    background: none;
+    background-image: url(../img/white-line.svg);
+    background-repeat: no-repeat;
+    background-size: 1200px 57px;
+    background-position: center;
   }
   .page-header__logo {
     position: absolute;
