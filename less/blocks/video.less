@@ -1,17 +1,183 @@
+.video {
+	padding-top: 35px;
+	padding-bottom: 32px;
+	
+	background-color: #ffffff;
+}
+
+.video__wrapper {
+	padding: 0 20px;
+}
+
 .video__title {
+	.mp-reset;
+	margin-bottom: 28px;
+	
 	font-family: "PT Sans Bold";
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 26px;
+	text-align: center;
 }
 
 .video__text {
+	.mp-reset;
+	padding: 0 20px;
+	margin-bottom: 35px;
+	
 	font-size: 14px;
 	line-height: 24px;
+	text-align: center;
 }
 
+.video__image {
+	width: 100%;
+}
+
+.video__controls {
+	height: 111px;	
+	padding: 0 20px;
+	margin-top: -51px;
+}
+
+.video__controls-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.video__bar {
+	position: absolute;
+	top: 22px;
+	left: 50%;
+	
+	width: 84%;
+	height: 3px;
+	
+	background-color: rgba(255, 255, 255, 0.2);
+	transform: translateX(-50%);
+}
+
+.video__toggle {
+	position: absolute;
+	top: 19px;
+	left: 21%;
+	
+	width: 9px;
+	height: 9px;
+	
+	background-color: #ffffff;
+	border-radius: 50%;
+}
+
+.video__buttons {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	
+	width: 100%;
+	height: 66px;
+	
+	background-color: #f2f2f2;
+}
+
+.video__button {
+	position: absolute;
+	
+	background: none;
+	border: none;
+	fill: #5c6870;
+	
+	&--repeat {
+		top: 22px;
+		left: 25px;
+		
+		width: 16px;
+		height: 20px;
+	}
+	
+	&--subtitles {
+		top: 23px;
+		right: 74px;
+		
+		width: 32px;
+		height: 20px;
+	}
+	
+	&--fullscreen {
+		top: 23px;
+		right: 23px;
+		
+		width: 20px;
+		height: 20px;
+	}
+}
+
+
 @media (min-width: @tablet-width) {
+	.video {
+		padding: 70px 60px 41px;
+	}
+	
+	.video__wrapper {
+		padding: 0 110px;
+	}
+	
 	.video__title {
 		font-size: 30px;
+	}
+	
+	.video__text {
+		margin-bottom: 70px;
+	}
+	
+	.video__controls {
+		position: relative;
+		
+		height: 93px;
+		padding: 0;
+		margin-top: -99px;
+	}
+	
+	.video__bar {
+		width: 60%;
+		top: 50%;
+		left: 93px;
+		
+		transform: translate(0, -50%);
+	}
+	
+	.video__toggle {
+		top: 50%;
+		left: 206px;
+		
+		transform: translateY(-50%);
+	}
+	
+	.video__buttons {
+		width: 100%;
+		height: 100%;
+		background: none;
+	}
+	
+	.video__button {
+		fill: #ffffff;
+		
+		&--repeat {
+			top: 35px;
+			left: 35px;
+		}
+		
+		&--subtitles {
+			top: 36px;
+			right: 92px;
+		}
+		
+		&--fullscreen {
+			top: 36px;
+			right: 41px;
+		}
 	}
 }
