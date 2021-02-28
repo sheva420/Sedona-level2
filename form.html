@@ -12,7 +12,8 @@
 </head>
 
 <body>
-	<header class="page-header">
+	<div class="container">
+		<header class="page-header">
 			<div class="page-header__wrapper">
 				<nav class="main-nav main-nav--closed main-nav--nojs">
 					<a class="page-header__logo">
@@ -34,123 +35,123 @@
 			</div>
 		</header>
 
-	<main>
-		<section class="form">
-			<h1 class="form__title">Оставьте свой отзыв</h1>
-			<p class="form__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-			<form action="#">
-				<fieldset class="form__info info">
-					<legend class="form__item-title">Представьтесь:</legend>
-					<p class="form__input-wrapper">
-						<label class="form__label" for="name">Имя*:</label>
-						<input class="form__input" type="text" id="name" placeholder="Петр">
-					</p>
-					<p class="form__input-wrapper">
-						<label class="form__label" for="surname">Фамилия*:</label>
-						<input class="form__input" type="text" id="surname" placeholder="Иванов">
-					</p>
-					<p class="form__input-wrapper">
-						<label class="form__label" for="middle-name">Отчество:</label>
-						<input class="form__input" type="text" id="middle-name" placeholder="Александрович">
-					</p>
-				</fieldset>
-				<fieldset class="form__contacts contacts">
-					<legend class="form__item-title">Контактная информация</legend>
-					<p class="form__input-wrapper">
-						<label class="form__label" for="phone">Контактный телефон*:</label>
-						<input class="form__input" type="text" id="phone" placeholder="Введите телефон">
-					</p>
-					<p class="form__input-wrapper">
-						<label class="form__label" for="email">Электронная почта*:</label>
-						<input class="form__input" type="text" id="email" placeholder="Введите e-mail">
-					</p>
-				</fieldset>
-				<fieldset class="form__impression impression">
-					<legend class="form__item-title">Ваше общее впечатление:</legend>
-					<p class="form__input-wrapper">
-						<label class="form__label form__label--bold" for="positive">Скорее положительное</label>
-						<input class="visually-hidden" type="radio" name="impression-radio" id="positive">
-					</p>
-					<p class="form__input-wrapper">
-						<label class="form__label form__label--bold" for="negative">Скорее отрицательное</label>
-						<input class="visually-hidden" type="radio" name="impression-radio" id="negative">
-					</p>
-					<p class="form__input-wrapper">
-						<label class="form__label form__label--bold" for="hard">Затрудняюсь ответить</label>
-						<input class="visually-hidden" type="radio" name="impression-radio" id="hard">
-					</p>
-				</fieldset>
-				<fieldset class="form__attractions attractions">
-					<legend class="form__item-title">Посещенные достопримечательности:</legend>
-					<p class="form__input-wrapper">
-						<label class="form__label form__label--bold" for="bridge">Мост Дьявола</label>
-						<input class="visually-hidden" type="checkbox" name="bridge-checkbox" id="bridge">
-					</p>
-					<p class="form__input-wrapper">
-						<label class="form__label form__label--bold" for="mountain">Гора-Колокол</label>
-						<input class="visually-hidden" type="checkbox" name="mountain-checkbox" id="mountain">
-					</p>
-					<p class="form__input-wrapper">
-						<label class="form__label form__label--bold" for="park">Слайд-парк</label>
-						<input class="visually-hidden" type="checkbox" name="park-checkbox" id="park">
-					</p>
-					<p class="form__input-wrapper">
-						<label class="form__label form__label--bold" for="rock">Красные скалы</label>
-						<input class="visually-hidden" type="checkbox" name="rock-checkbox" id="rock">
-					</p>
-				</fieldset>
-				<fieldset class="form__emotions emotions">
-					<legend class="form__item-title">Опишите свои эмоции:</legend>
-					<p class="form__input-wrapper">
-						<textarea class="form__input" name="emotions" id="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
-					</p>
-				</fieldset>
-				<button class="button" type="submit">Отправить отзыв</button>
-				<span class="form__legend">* — обязательные поля</span>
-			</form>
-		</section>
-	</main>
+		<main>
+			<section class="form">
+				<h1 class="form__title">Оставьте свой отзыв</h1>
+				<p class="form__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+				<form class="form__wrapper" action="#">
+					<fieldset class="form__info form__group">
+						<legend class="form__item-title">Представьтесь:</legend>
+						<p class="form__input-wrapper">
+							<label class="form__label" for="name">Имя*:</label>
+							<input class="form__input" type="text" id="name" placeholder="Петр">
+						</p>
+						<p class="form__input-wrapper">
+							<label class="form__label" for="surname">Фамилия*:</label>
+							<input class="form__input" type="text" id="surname" placeholder="Иванов">
+						</p>
+						<p class="form__input-wrapper">
+							<label class="form__label" for="middle-name">Отчество:</label>
+							<input class="form__input" type="text" id="middle-name" placeholder="Александрович">
+						</p>
+					</fieldset>
+					<fieldset class="form__contacts form__group">
+						<legend class="form__item-title">Контактная информация</legend>
+						<p class="form__input-wrapper">
+							<label class="form__label" for="phone">Контактный телефон*:</label>
+							<input class="form__input" type="text" id="phone" placeholder="Введите телефон">
+						</p>
+						<p class="form__input-wrapper">
+							<label class="form__label" for="email">Электронная почта*:</label>
+							<input class="form__input" type="text" id="email" placeholder="Введите e-mail">
+						</p>
+					</fieldset>
+					<fieldset class="form__impression form__group">
+						<legend class="form__item-title">Ваше общее впечатление:</legend>
+						<p class="form__input-wrapper">
+							<label class="form__label form__label--bold" for="positive">Скорее положительное</label>
+							<input class="visually-hidden" type="radio" name="impression-radio" id="positive">
+						</p>
+						<p class="form__input-wrapper">
+							<label class="form__label form__label--bold" for="negative">Скорее отрицательное</label>
+							<input class="visually-hidden" type="radio" name="impression-radio" id="negative">
+						</p>
+						<p class="form__input-wrapper">
+							<label class="form__label form__label--bold" for="hard">Затрудняюсь ответить</label>
+							<input class="visually-hidden" type="radio" name="impression-radio" id="hard">
+						</p>
+					</fieldset>
+					<fieldset class="form__attractions form__group">
+						<legend class="form__item-title">Посещенные достопримечательности:</legend>
+						<p class="form__input-wrapper">
+							<label class="form__label form__label--bold" for="bridge">Мост Дьявола</label>
+							<input class="visually-hidden" type="checkbox" name="bridge-checkbox" id="bridge">
+						</p>
+						<p class="form__input-wrapper">
+							<label class="form__label form__label--bold" for="mountain">Гора-Колокол</label>
+							<input class="visually-hidden" type="checkbox" name="mountain-checkbox" id="mountain">
+						</p>
+						<p class="form__input-wrapper">
+							<label class="form__label form__label--bold" for="park">Слайд-парк</label>
+							<input class="visually-hidden" type="checkbox" name="park-checkbox" id="park">
+						</p>
+						<p class="form__input-wrapper">
+							<label class="form__label form__label--bold" for="rock">Красные скалы</label>
+							<input class="visually-hidden" type="checkbox" name="rock-checkbox" id="rock">
+						</p>
+					</fieldset>
+					<fieldset class="form__emotions form__group">
+						<legend class="form__item-title">Опишите свои эмоции:</legend>
+						<p class="form__input-wrapper">
+							<textarea class="form__input" name="emotions" id="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+						</p>
+					</fieldset>
+					<button class="button" type="submit">Отправить отзыв</button>
+					<span class="form__legend">* — обязательные поля</span>
+				</form>
+			</section>
+		</main>
 
-	<footer class="page-footer">
-		<div class="page-footer__wrapper">
-			<b class="page-footer__hashtag">#visitsedona</b>
-			<ul class="social">
-				<li class="social__item social__item--twitter"><a href="#">Мы в Twitter</a></li>
-				<li class="social__item social__item--facebook"><a href="#">Мы в Facebook</a></li>
-				<li class="social__item social__item--youtube"><a href="#">Мы в Youtube</a></li>
-			</ul>
-			<p class="copyright">
-				<b class="copyright__text">Разработано</b>
-				<a class="copyright__link" href="#">
-					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="34px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-						<path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z" />
-					</svg>
-				</a>
-			</p>
-		</div>
-	</footer>
+		<footer class="page-footer">
+			<div class="page-footer__wrapper">
+				<b class="page-footer__hashtag">#visitsedona</b>
+				<ul class="social">
+					<li class="social__item social__item--twitter"><a href="#">Мы в Twitter</a></li>
+					<li class="social__item social__item--facebook"><a href="#">Мы в Facebook</a></li>
+					<li class="social__item social__item--youtube"><a href="#">Мы в Youtube</a></li>
+				</ul>
+				<p class="copyright">
+					<b class="copyright__text">Разработано</b>
+					<a class="copyright__link" href="#">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="34px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+							<path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z" />
+						</svg>
+					</a>
+				</p>
+			</div>
+		</footer>
 
-	<script>
-		var NavMain = document.querySelector(".main-nav");
-		var NavToggleOpen = document.querySelector(".main-nav__toggle-open");
-		var NavToggleClose = document.querySelector(".main-nav__toggle-close");
+		<script>
+			var NavMain = document.querySelector(".main-nav");
+			var NavToggleOpen = document.querySelector(".main-nav__toggle-open");
+			var NavToggleClose = document.querySelector(".main-nav__toggle-close");
 
-		NavMain.classList.remove("main-nav--nojs");
+			NavMain.classList.remove("main-nav--nojs");
 
-		NavToggleOpen.addEventListener("click", function(evt) {
-			evt.preventDefault();
-			NavMain.classList.remove("main-nav--closed");
-			NavMain.classList.add("main-nav--opened");
-		});
+			NavToggleOpen.addEventListener("click", function(evt) {
+				evt.preventDefault();
+				NavMain.classList.remove("main-nav--closed");
+				NavMain.classList.add("main-nav--opened");
+			});
 
-		NavToggleClose.addEventListener("click", function(evt) {
-			evt.preventDefault();
-			NavMain.classList.remove("main-nav--opened");
-			NavMain.classList.add("main-nav--closed");
-		});
+			NavToggleClose.addEventListener("click", function(evt) {
+				evt.preventDefault();
+				NavMain.classList.remove("main-nav--opened");
+				NavMain.classList.add("main-nav--closed");
+			});
 
-	</script>
-
+		</script>
+	</div>
 </body>
 
 </html>
