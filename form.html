@@ -57,56 +57,58 @@
 					</fieldset>
 					<fieldset class="form__contacts form__group">
 						<legend class="form__item-title">Контактная информация</legend>
-						<p class="form__input-wrapper">
+						<p class="form__input-wrapper form__input-wrapper--phone">
 							<label class="form__label" for="phone">Контактный телефон*:</label>
-							<input class="form__input" type="text" id="phone" placeholder="Введите телефон">
+							<input class="form__input form__input--phone" type="text" id="phone" placeholder="Введите телефон">
 						</p>
-						<p class="form__input-wrapper">
+						<p class="form__input-wrapper form__input-wrapper--email">
 							<label class="form__label" for="email">Электронная почта*:</label>
-							<input class="form__input" type="text" id="email" placeholder="Введите e-mail">
+							<input class="form__input form__input--email" type="text" id="email" placeholder="Введите e-mail">
 						</p>
 					</fieldset>
 					<fieldset class="form__impression form__group">
 						<legend class="form__item-title">Ваше общее впечатление:</legend>
 						<p class="form__input-wrapper">
+							<input class="visually-hidden form__input--radio" type="radio" name="impression-radio" id="positive" checked>
 							<label class="form__label form__label--bold" for="positive">Скорее положительное</label>
-							<input class="visually-hidden" type="radio" name="impression-radio" id="positive">
 						</p>
 						<p class="form__input-wrapper">
+							<input class="visually-hidden form__input--radio" type="radio" name="impression-radio" id="negative">
 							<label class="form__label form__label--bold" for="negative">Скорее отрицательное</label>
-							<input class="visually-hidden" type="radio" name="impression-radio" id="negative">
 						</p>
 						<p class="form__input-wrapper">
+							<input class="visually-hidden form__input--radio" type="radio" name="impression-radio" id="hard">
 							<label class="form__label form__label--bold" for="hard">Затрудняюсь ответить</label>
-							<input class="visually-hidden" type="radio" name="impression-radio" id="hard">
 						</p>
 					</fieldset>
 					<fieldset class="form__attractions form__group">
 						<legend class="form__item-title">Посещенные достопримечательности:</legend>
 						<p class="form__input-wrapper">
+							<input class="visually-hidden form__input--checkbox" type="checkbox" name="bridge-checkbox" id="bridge" checked>
 							<label class="form__label form__label--bold" for="bridge">Мост Дьявола</label>
-							<input class="visually-hidden" type="checkbox" name="bridge-checkbox" id="bridge">
 						</p>
 						<p class="form__input-wrapper">
+							<input class="visually-hidden form__input--checkbox" type="checkbox" name="mountain-checkbox" id="mountain" checked>
 							<label class="form__label form__label--bold" for="mountain">Гора-Колокол</label>
-							<input class="visually-hidden" type="checkbox" name="mountain-checkbox" id="mountain">
 						</p>
 						<p class="form__input-wrapper">
+							<input class="visually-hidden form__input--checkbox" type="checkbox" name="park-checkbox" id="park" checked>
 							<label class="form__label form__label--bold" for="park">Слайд-парк</label>
-							<input class="visually-hidden" type="checkbox" name="park-checkbox" id="park">
 						</p>
 						<p class="form__input-wrapper">
+							<input class="visually-hidden form__input--checkbox" type="checkbox" name="rock-checkbox" id="rock">
 							<label class="form__label form__label--bold" for="rock">Красные скалы</label>
-							<input class="visually-hidden" type="checkbox" name="rock-checkbox" id="rock">
 						</p>
 					</fieldset>
 					<fieldset class="form__emotions form__group">
 						<legend class="form__item-title">Опишите свои эмоции:</legend>
 						<p class="form__input-wrapper">
-							<textarea class="form__input" name="emotions" id="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+							<textarea class="form__input form__input--textarea" name="emotions" id="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
 						</p>
 					</fieldset>
-					<button class="button" type="submit">Отправить отзыв</button>
+					<div class="form__button-wrapper">
+						<button class="button form__button" type="submit">Отправить отзыв</button>
+					</div>
 					<span class="form__legend">* — обязательные поля</span>
 				</form>
 			</section>
