@@ -58,7 +58,7 @@
 					<fieldset class="form__contacts form__group">
 						<legend class="form__item-title">Контактная информация</legend>
 						<p class="form__input-wrapper form__input-wrapper--phone">
-							<label class="form__label" for="phone">Контактный телефон*:</label>
+							<label class="form__label" for="phone"><span>Контактный </span>телефон*:</label>
 							<input class="form__input form__input--phone" type="text" id="phone" placeholder="Введите телефон">
 						</p>
 						<p class="form__input-wrapper form__input-wrapper--email">
@@ -82,23 +82,25 @@
 						</p>
 					</fieldset>
 					<fieldset class="form__attractions form__group">
-						<legend class="form__item-title">Посещенные достопримечательности:</legend>
-						<p class="form__input-wrapper">
-							<input class="visually-hidden form__input--checkbox" type="checkbox" name="bridge-checkbox" id="bridge" checked>
-							<label class="form__label form__label--bold" for="bridge">Мост Дьявола</label>
-						</p>
-						<p class="form__input-wrapper">
-							<input class="visually-hidden form__input--checkbox" type="checkbox" name="mountain-checkbox" id="mountain" checked>
-							<label class="form__label form__label--bold" for="mountain">Гора-Колокол</label>
-						</p>
-						<p class="form__input-wrapper">
-							<input class="visually-hidden form__input--checkbox" type="checkbox" name="park-checkbox" id="park" checked>
-							<label class="form__label form__label--bold" for="park">Слайд-парк</label>
-						</p>
-						<p class="form__input-wrapper">
-							<input class="visually-hidden form__input--checkbox" type="checkbox" name="rock-checkbox" id="rock">
-							<label class="form__label form__label--bold" for="rock">Красные скалы</label>
-						</p>
+						<legend class="form__item-title">Посещенные <br> достопримечательности:</legend>
+						<div class="form__group-wrapper">
+							<p class="form__input-wrapper">
+								<input class="visually-hidden form__input--checkbox" type="checkbox" name="bridge-checkbox" id="bridge" checked>
+								<label class="form__label form__label--bold" for="bridge">Мост Дьявола</label>
+							</p>
+							<p class="form__input-wrapper">
+								<input class="visually-hidden form__input--checkbox" type="checkbox" name="mountain-checkbox" id="mountain" checked>
+								<label class="form__label form__label--bold" for="mountain">Гора-Колокол</label>
+							</p>
+							<p class="form__input-wrapper">
+								<input class="visually-hidden form__input--checkbox" type="checkbox" name="park-checkbox" id="park" checked>
+								<label class="form__label form__label--bold" for="park">Слайд-парк</label>
+							</p>
+							<p class="form__input-wrapper">
+								<input class="visually-hidden form__input--checkbox" type="checkbox" name="rock-checkbox" id="rock">
+								<label class="form__label form__label--bold" for="rock">Красные скалы</label>
+							</p>
+						</div>
 					</fieldset>
 					<fieldset class="form__emotions form__group">
 						<legend class="form__item-title">Опишите свои эмоции:</legend>
@@ -108,8 +110,8 @@
 					</fieldset>
 					<div class="form__button-wrapper">
 						<button class="button form__button" type="submit">Отправить отзыв</button>
+						<span class="form__legend">* — обязательные поля</span>
 					</div>
-					<span class="form__legend">* — обязательные поля</span>
 				</form>
 			</section>
 		</main>
