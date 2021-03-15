@@ -16,7 +16,7 @@
 		<header class="page-header">
 			<div class="page-header__wrapper">
 				<nav class="main-nav main-nav--closed main-nav--nojs">
-					<a class="page-header__logo">
+					<a class="page-header__logo" href="index.html">
 						<picture>
 							<source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
 							<source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -28,7 +28,7 @@
 					<ul class="main-nav__list">
 						<li class="main-nav__item"><a href="index.html">Главная</a></li>
 						<li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
-						<li class="main-nav__item"><a>Форма отзыва</a></li>
+						<li class="main-nav__item main-nav__item--active"><a>Форма отзыва</a></li>
 						<li class="main-nav__item"><a href="#">HTML academy</a></li>
 					</ul>
 				</nav>
@@ -109,7 +109,7 @@
 						</p>
 					</fieldset>
 					<div class="form__button-wrapper">
-						<button class="button form__button" type="submit">Отправить отзыв</button>
+						<button class="button form__button" type="submit"><span>Отправить отзыв</span></button>
 						<span class="form__legend">* — обязательные поля</span>
 					</div>
 				</form>
@@ -141,14 +141,14 @@
 				<p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
 			</div>
 			<div class="popup__bottom-wrapper">
-				<button class="popup__button button">Закрыть окно</button>
+				<button class="popup__button button"><span>Закрыть окно</span></button>
 			</div>
 		</section>
 
 		<section class="popup popup--failure">
 			<h2 class="popup__title">Что-то пошло не так!</h2>
 			<p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-			<button class="popup__button button">Ок</button>
+			<button class="popup__button button"><span>Ок</span></button>
 		</section>
 
 		<script>

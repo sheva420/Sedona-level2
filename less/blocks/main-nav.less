@@ -66,6 +66,17 @@
 	border: none;
 	background-color: @blue-color;
 	box-shadow: 0 0 0 0 @blue-color, 0 8px 0 0 @blue-color, 0 17px 0 0 @blue-color;
+	
+	&:hover,
+	&:focus {
+		opacity: 0.6;
+		
+		outline: none;
+	}
+	
+	&:active {
+		opacity: 0.3;
+	}
 }
 
 .main-nav__toggle-close {
@@ -109,6 +120,17 @@
 		background-color: #ffffff;
 
 		transform: rotate(-45deg);
+	}
+	
+	&:hover,
+	&:focus {
+		opacity: 0.6;
+		
+		outline: none;
+	}
+	
+	&:active {
+		opacity: 0.3;
 	}
 }
 
@@ -184,7 +206,7 @@
 	.main-nav {
 		background-color: #ffffff;
 	}
-	
+
 	.main-nav--closed {
 
 		& .main-nav__list {
@@ -220,6 +242,15 @@
 			&::after {
 				content: none;
 			}
+
+			&:hover,
+			&:focus {
+				color: @blue-color;
+			}
+
+			&:active {
+				color: rgba(0, 0, 0, 0.3);
+			}
 		}
 
 		&:nth-child(3) {
@@ -228,6 +259,20 @@
 
 		&:nth-child(7) {
 			margin-left: 20%;
+		}
+
+		&--active a {
+			color: #766357;
+
+			&:hover,
+			&:focus {
+				color: #604e43;
+			}
+
+			&:active {
+				color: #766357;
+				opacity: 0.3;
+			}
 		}
 	}
 

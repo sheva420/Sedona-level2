@@ -14,4 +14,20 @@
 .copyright__link {
 	display: block;
 	height: 34px;
+	
+	&:hover,
+	&:focus {
+		
+		& svg {
+			fill: @blue-color;
+		}
+	}
+	
+	&:active {
+		
+		& svg {
+			fill: #000000;
+			opacity: 0.3;
+		}
+	}
 }
